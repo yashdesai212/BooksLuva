@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/5de9ab161e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="account-details.css">
+    <title>User Details</title>
+</head>
+
+<body>
+    <header>
+        <nav id="navbar">
+            <img src="logo.PNG" alt="Booksluva">
+            <ul id="navbar-list">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Mitra</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Conatct Us</a></li>
+                <li><a href="#">My account</a></li>
+                <li><a href="#"><i class="fa fa-shopping-bag" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa fa-search" aria-hidden="true"></i></a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="display-activity">
+        <div id="activity">My account</div>
+        <div id="path">My account</div>
+    </section>
+    <section id="main-container">
+        <aside>
+            <div id="username-image">
+                <img src="user-img.png" alt="user" id="user-img">
+                <h3>Username</h3>
+            </div>
+            <div id="side-menu">
+                <li><a href="#"  class="name active " onclick="dash_Board()">Dash board </a><i class="fa fa-tachometer"
+                        aria-hidden="true"></i></li>
+                <li><a href="#" class="name " onclick="Orders()">My Orders </a><i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                </li>
+                <li><a href="https://www.booksluva.com/track-orders/" class="name">Track orders </a><i class="fa fa-map-marker" aria-hidden="true"></i>
+                </li>
+                <li><a href="#" class="name" onclick="down()">Downloads </a><i class="fa fa-download" aria-hidden="true"></i></li>
+                <li><a href="#" class="name" onclick="add()">Addresses </a><i class="fa fa-address-book" aria-hidden="true"></i></li>
+                <li><a href="#" class="name" onclick="acc_det()">Account details </a><i class="fa fa-info-circle"
+                        aria-hidden="true"></i></li>
+                <li><a href="#" class="name" onclick="wish()">Wish list </a><i class="fa fa-heart" aria-hidden="true"></i></li>
+                <li><a href="https://www.booksluva.com/" class="name">Log out </a><i class="fa fa-sign-out" aria-hidden="true"></i></li>
+            </div>
+        </aside>
+        <div id="right-display-activity">
+            <div id="dash-board">
+                <div id="inside-dashboard">
+                    <p>Your Orders<i class="fa fa-shopping-cart" aria-hidden="true"></i><br><b> 0</b></p>
+                    <p>Purchased Books <i class="fa fa-book"></i><br><b> 4</b></p>
+                    <p>Wish list books <i class="fa fa-heart"></i><br><b> 7</b></p>
+                </div>
+            </div>
+            <div id="orders">
+                <p><i class="fas fa-info"></i>No orders has been made yet <a
+                        href="https://www.booksluva.com/shop/"><button class="btn">Browse Orders</button></a></p>
+            </div>
+            <div id="downloads">
+                <p><i class="fas fa-info"></i>No downloads available yet <a
+                        href="https://www.booksluva.com/shop/"><button class="btn">Browse Orders</button></a></p>
+            </div>
+            <div id="addresses">
+                <p>The following addresses will be used on the checkout page by default</p>
+                <div id="address-boxes">
+                    <div>
+                        <span>
+                            <h2>Billing address</h2>
+                            <button class="btn">add</button>
+                        </span>
+                        <br>
+                        you have not set up this address yet
+                    </div>
+                    <div>
+                        <span>
+                            <h2>Shipping address</h2>
+                            <button class="btn">add</button>
+                        </span>
+                        <br>
+                        you have not set up this address yet
+                    </div>
+                </div>
+            </div>
+            <div id="acc_details">
+                <form action="/" method="post">
+                    <label for="first name">First name:</label>
+                    <input type="text" placeholder="first name" id="firstname">
+                    <label for="lastname">Last name:</label>
+                    <input type="text" placeholder="last name" id="lastname">
+                    <br>
+                    <label for="username">Username:</label>
+                    <input type="text" placeholder="Username" id="username">
+                    <br>
+                    <label for="email">Email ID:</label>
+                    <input type="email" name="email" id="email" placeholder="Email">
+                    <br>
+                    <label for="phoneno">Mobile No:</label>
+                    <input type="number" min="1" max="10"  name="phoneno" id="phoneno" placeholder="Mobile number">
+                    <br>
+                    <p>Change Password</p>
+                    <label for="currentpw">Current password:</label>
+                    <input type="password" name="currentpw" id="currentpw" placeholder="current password">
+                    <br>
+                    <label for="newpw">New password:</label>
+                    <input type="password" name="newpw" id="newpw" placeholder="New password">
+                    <label for="confirmpw">Confirm password:</label>
+                    <input type="password" name="confirmpw" id="confirmpw" placeholder="confirm password">
+                    <br>
+                    <button class="btn" >
+                        Save changes
+                    </button>
+                </form>
+            </div>
+            <div id="wishlist">
+                <p><i class="fas fa-info"></i>Your Wishlist is currently empty <a
+                    href="https://www.booksluva.com/shop/"><button class="btn">return to shop</button></a></p>
+            </div>
+        </div>
+    </section>
+
+    <script src="account-details.js"></script>
+</body>
+
+</html>

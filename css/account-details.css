@@ -1,0 +1,337 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+*
+{
+    padding: 0;
+    margin: 0;
+}
+.active
+{
+    text-shadow: 3px 4px 10px rgb(240, 185, 253);
+}
+b
+{
+    font-size: 3rem;
+}
+body
+{
+    background: url('back-ground.jpg') no-repeat center center/cover;
+    font-family: 'Ubuntu', sans-serif;;
+}
+.btn
+{
+    background-color: rgb(212, 34, 34);
+    border: none;
+    padding: 5px 20px;
+    margin-left: 55%;
+    color: rgb(231, 230, 230);
+    font-weight: 200;
+    cursor: pointer;
+    outline: none;
+}
+
+/* Navbar Style starts from here */
+#navbar
+{
+    display: flex;
+    padding: 0 25px;
+    box-shadow: 2px -1px 9px rgb(82, 82, 82);
+    padding: 0% 10%;
+}
+#navbar-list
+{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    width: 70%;
+    margin-left: 100px;
+}
+#navbar-list li
+{
+    list-style: none;
+    padding: 20px;
+}
+#navbar-list li a
+{
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: rgb(66, 4, 117);
+    font-weight: 600;
+}
+#navbar-list li a:hover
+{
+    color: rgb(248, 96, 96);
+}
+/* navbar style ends here */
+
+
+
+/* Second box which display acticity and path style strats here*/
+#display-activity
+{
+    display: flex;
+    padding: 0% 10.5%;
+    height: 70px;
+    box-shadow: 0 2px 3px -1px rgba(105, 105, 105, 0.1);
+    align-items: center;
+}
+#activity
+{
+    font-size: 1.8rem;
+    width: 90%;
+}
+#path
+{
+    font-size: 1.2rem;
+}
+/* Second ends here */
+
+
+
+/* Main-container  for showing activities and menu ...starts*/
+#main-container
+{
+    display: flex;
+    padding: 0 10%;
+}
+
+/* side menu */
+aside
+{
+    width: 25%;
+    margin-top: 3px;
+    box-shadow: 0 1px 5px 5px rgba(54, 54, 54, 0.1);
+}
+#username-image
+{
+    display: flex;
+    align-items: center;
+}
+#user-img
+{
+    width: 20%;
+    border:1px rgb(184, 182, 182) solid;
+    border-radius: 50%;
+    margin: 2% 10%;
+}
+#side-menu
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 7%;
+    margin-right: 5%;
+}
+#side-menu li
+{
+    list-style: none;
+    padding: 5%;
+    border-top: 1px solid rgb(80, 80, 80);
+}
+#side-menu li i
+{
+    float: right;
+    clear: both;
+    color: rgb(61, 2, 73);
+}
+#side-menu li a
+{
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: rgb(61, 2, 73);
+}
+#side-menu li a:hover
+{
+    color: rgb(228, 35, 77);
+}
+
+/* side menu ends */
+/* Main-container  for showing activities and menu ...ends*/
+
+
+/* right different catogaries box ..starts */
+#right-display-activity
+{
+
+    width: 75%;
+}
+/*  
+/* dashboard strats  */
+#inside-dashboard
+{    
+    height: 200px;
+    margin: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+  
+#inside-dashboard p
+{
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.4rem;
+    padding: 25px 10px;
+    height: 100px;
+    width: 200px;
+    background-color: rgba(250, 214, 214, 0.5);
+    box-shadow: 1px 3px 5px rgb(133, 132, 132);
+    border-radius: 10px;
+} 
+
+/* dashboard ends */
+
+
+
+/* My orders starts here */
+#orders
+{
+    display: none;
+    margin: 25px;
+    padding: 10px;
+    box-shadow: 1px 2px 5px rgb(156, 156, 156);
+}
+#orders p i
+{
+    padding: 0px 10px;
+    color: rgb(133, 133, 133);
+}
+
+
+
+/* my orders ends here */
+
+/* downloads starts here */
+#downloads
+{
+    display: none;
+    margin: 25px;
+    padding: 10px;
+    box-shadow: 1px 2px 5px rgb(156, 156, 156);
+}
+#downloads p i
+{
+    padding: 0px 10px;
+    color: rgb(133, 133, 133);
+}
+
+
+/* downloads ends here */
+
+/* address part starts */
+#addresses
+{
+    display: none;
+    margin: 25px;
+    padding: 10px;
+    background-color: rgba(250, 216, 215, 0.4);
+    box-shadow: 1px 2px 6px gray;
+}
+#addresses p
+{
+    margin-left: 40px;
+    margin-top: 10px;
+    font-size: 1.2rem;
+    font-size: 1.3rem;
+    font-weight: 300;
+}
+#address-boxes
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 15px 10px;
+}
+#address-boxes div
+{
+    box-shadow: 2px 3px 8px gray;
+    margin: 10px;
+    padding: 15px;
+    width: auto;
+    height: 110px;
+    font-size: 1.2rem;
+}
+#address-boxes div span
+{
+    display: flex;
+}
+
+#address-boxes div button
+{
+    font-size: 1rem;
+    margin-left: 20px;
+    position: inherit;
+}
+/* address part ends */
+
+
+/* account details starts */
+#acc_details
+{
+    display: none;
+    margin: 25px;
+    padding: 10px;
+    box-shadow: 1px 2px 5px rgb(88, 88, 88);
+}
+#acc_details form
+{
+    padding: 20px;
+    font-size: 1.2rem;
+}
+#acc_details form input
+{
+    padding: 5px 10px;
+    margin: 10px 5px;
+    outline: none;
+    width: 170px;
+    font-weight: 500;
+    font-size: 0.8rem;
+    border-radius: 5px;
+    font-family:  sans-serif;
+    border: 1px solid rgb(114, 113, 113);
+    background: none;
+}
+::placeholder
+{
+    color: rgb(29, 29, 29);
+}
+#acc_details form label
+{
+    font-size: 1rem;
+    font-weight: bold;
+    color: rgb(32, 32, 32);
+}
+#acc_details form p
+{
+    font-size: 1.3rem;
+    font-weight: 600;
+    border-bottom: 0.5px solid rgba(255, 0, 0, 0.774);
+    margin: 5px;
+    color: rgb(43, 42, 42);
+}
+#acc_details form button
+{
+    margin-left: 0px;
+    margin-top: 5px;
+    font-weight: bold;
+    font-size: 1rem;
+}
+/* account details ends */
+
+
+/* account details starts */
+#wishlist
+{
+    display: none;
+    margin: 25px;
+    padding: 10px;
+    box-shadow: 1px 2px 5px rgb(156, 156, 156);
+}
+#wishlist p i
+{
+    padding: 0px 10px;
+    color: rgb(133, 133, 133);
+}
+
+/* account details ends */
+/* right box ends here */
